@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Illuminous</title>
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/lodash@4.16.0"></script>
+    <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.bootcss.com/echarts/3.3.0/echarts.common.min.js"></script>
+    <script type="text/javascript" language="javascript" src="illuminous.js"></script>
+    <link rel="stylesheet" href="illuminous.css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="header">
+        <p><img src="./img/idea.png" style="width: 4%; height: 4%" /><span>Illuminous</span></p>
+    </div>
+    <div id="illuminous">
+        <upload-file
+            v-on:file-loaded="loadRule"
+            v-on:file-removed="removeRule">
+        </upload-file>
+        <span>{{ renderedResult }}</span>
+        <editor
+            v-on:input-updated="renderRuleHTML"
+            v-bind:result="renderedHTML">
+        </editor>
+    </div>
+    <div id="footer">
+        <p class="text-center">Copyright © 2018 | Designed by <a href="https://github.com/Rvtea/Illuminous" target=_new>Yuan Xiao</a>
+        </p>
+    </div>
+</body>
+
+</html>

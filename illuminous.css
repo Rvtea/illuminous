@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+}
+
+html, body, #editor {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+#header p {
+  margin: 0 auto;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+#header span {
+  margin-left: 20px;
+  font-size: 72px;
+  font-family: "Great Vibes", "Helvetica Neue", Arial, sans-serif;
+  color: #909090;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+#illuminous {
+  height: auto
+}
+
+#uploadZone {
+  display: block;
+  padding: 5px 5px;
+  margin: auto;
+}
+
+#uploadZone div{
+  text-align: center;
+}
+
+textarea, #renderZone {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+textarea {
+  height: -webkit-fill-available;
+  border: none;
+  border-right: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-family: 'Monaco', courier, monospace;
+  padding: 20px;
+}
+
+#editor {
+  height: auto !important;
+}
+
+code {
+  color: #f66;
+}
+
+#footer {
+  display: table;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: #909090;
+}
