@@ -90,6 +90,7 @@ window.addEventListener('load', () => new Vue({
         },
         removeRule: function() {
             this.renderedResult = '';
+            this.ruleEngine = '';
         },
         renderRuleHTML: function(input) {
             if (this.ruleEngine != '') {
